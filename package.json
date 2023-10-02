@@ -1,0 +1,26 @@
+{
+  "name": "vue3-progress-scroll",
+  "version": "1.0.9",
+  "description": "🤖🎉🎉  Css滚动进度插件, 融入Vue3 + Ts生命周期,更方便使用",
+  "main": "lib/index.ts",
+  "scripts": {
+    "tsc": "tsc -w lib/index.ts"
+  },
+  "keywords": [
+    "vue3",
+    "ts",
+    "Progress",
+    "ProgressScroll",
+    "scroll",
+    "tools",
+    "plugin"
+  ],
+  "author": "张坤",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
