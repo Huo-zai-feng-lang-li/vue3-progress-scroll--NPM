@@ -1,6 +1,6 @@
 {
   "name": "vue3-progress-scroll",
-  "version": "1.0.9",
+  "version": "1.1.2",
   "description": "🤖🎉🎉  Css滚动进度插件, 融入Vue3 + Ts生命周期,更方便使用",
   "main": "lib/index.ts",
   "scripts": {
@@ -15,6 +15,13 @@
     "tools",
     "plugin"
   ],
+  "repository": {
+    "type": "github",
+    "url": "git+https://github.com/huozaifenlangli/vue3-progress-scroll--NPM"
+  },
+  "bugs": {
+    "url": "https://github.com/huozaifenlangli/vue3-progress-scroll--NPM/issues"
+  },
   "author": "张坤",
   "license": "ISC",
   "dependencies": {

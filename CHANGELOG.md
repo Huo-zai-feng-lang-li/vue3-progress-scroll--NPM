@@ -1,6 +1,15 @@
-# <a href="https://gitee.com/zhang-kun8888/vue3-directive-tool" target="_blank">vue3-directive-tools 更新日志</a>
+# <a href="https://github.com/huozaifenlangli/vue3-progress-scroll--NPM" target="_blank">vue3-directive-tools 更新日志</a>
 
-🎉🎉🔥 `vue3-directive` 是一个方便在 Vue 3 + Ts 项目中快速使用的指令及 Hooks 的 npm 插件。它允许您轻松地在项目中添加多种功能，它采用 Ts 方式开发，与 Vue3 更加搭配
+🎉🎉🤖 `vue3-progress-scroll` 轻量版 滚动进度可可视化插件, 融入 Vue3 + Ts Hooks, 更方便使用
+
+## 1.0.0
+
+`2023.10.09`
+
+- 🌟 更新 上传 1.1.2 版本
+- 🌟 更新说明文档
+
+---
 
 ## 1.0.0
 
