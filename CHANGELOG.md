@@ -1,4 +1,4 @@
-# <a href="https://github.com/huozaifenlangli/vue3-progress-scroll--NPM" target="_blank">vue3-directive-tools 更新日志</a>
+# <a href="https://github.com/huozaifenlangli/vue3-progress-scroll--NPM" target="_blank">vue3-progress-scroll 更新日志</a>
 
 🎉🎉🤖 `vue3-progress-scroll` 轻量版 滚动进度可可视化插件, 融入 Vue3 + Ts Hooks, 更方便使用
 
@@ -6,10 +6,13 @@
 
 `2023.10.09`
 
-- 🌟 更新 上传 1.1.3 版本
-- 🌟 更新说明文档
+- 🌟 更新 上传 1.1.4 版本
+- 🎉 更新 `package.json URL` 文档
 
 ---
+
+- 🌟 更新 上传 1.1.3 版本
+- 🌟 更新 `README.md` 文档
 
 ## 1.0.X
 
