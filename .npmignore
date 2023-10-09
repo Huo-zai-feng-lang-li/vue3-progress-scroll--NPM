@@ -1,6 +1,7 @@
 CHANGELOG.md
 tsconfig.json
 pnpm-lock.yaml
+dist
 lib/*
 # 这样，lib/* 表示忽略 lib 目录下的所有文件和子目录，而 !lib/index.js 表示除了 index.js 文件之外的其他文件都会被忽略。
 # !lib/index.js
