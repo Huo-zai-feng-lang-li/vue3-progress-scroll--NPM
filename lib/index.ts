@@ -9,7 +9,7 @@ interface ScrollBarType {
 	UIViewBackground: string;
 }
 
-let timer: number | null | undefined = null;
+let timer: number | null | undefined | NodeJS.Timeout = null;
 // 声明provide的key用于inject接受类型注解
 const scrollKey: InjectionKey<{
 	// 参数可选、因为只需要在main.ts中传入一次参数即可，其余地方调用不需要传参
@@ -70,8 +70,10 @@ function onSetProgressProp(
 
 // 命名函数openScroll  参数可选、因为只需要在main.ts中传入一次参数即可，其余地方调用不需要传参
 function openScroll(option?: ScrollBarType): void {
-	onActivated(() => onSetProgressProp(option));
-	onMounted(() => onSetProgressProp(option));
+	const payload = () =>
+		option ? onSetProgressProp(option) : onSetProgressProp();
+	onActivated(() => payload());
+	onMounted(() => payload());
 }
 
 const closeScroll = (): void => {
@@ -87,13 +89,14 @@ const onClear = (): void => {
 // 注册插件接受参数并挂载到全局
 const useScroll = {
 	install: (app: App, option?: ScrollBarType) => {
+		const payload = () => (option ? openScroll(option) : openScroll());
 		app.provide(scrollKey, {
-			$openScroll: () => (option ? openScroll(option) : openScroll()),
-			$closeScroll: () => closeScroll(),
+			$openScroll: () => payload(),
+			$closeScroll: () => closeScroll, // 不能在非setup上下文调用
 		});
 
-		app.config.globalProperties.$openScroll = () => openScroll(option); // 注意命名函数赋值需要使用函数表达式赋值，不能直接赋值
-		app.config.globalProperties.$closeScroll = closeScroll; //匿名函数可以直接赋值，使用的地方在小括号调用
+		app.config.globalProperties.$openScroll = () => payload();
+		app.config.globalProperties.$closeScroll = closeScroll;
 	},
 };
 

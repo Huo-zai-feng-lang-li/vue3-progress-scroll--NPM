@@ -51,15 +51,15 @@ app.use(useScroll, {
 ```javascript
 /* Step 3
 ------------------------------------------------------------------ */
-// 在父容器绑定类名
+// 💡 在父容器绑定类名
 <div class="ProgressTopBar">
     <p v-for="(item, index) in 1000" :key="index">{{ index + 1 }}</p>
 </div>
 
 import { ref, inject } from "vue";
 import { scrollKey } from "vue3-progress-scroll";
-inject(scrollKey)?.$openScroll();
-inject(scrollKey)?.$closeScroll();
+inject<typeof scrollKey>(scrollKey).$openScroll();
+inject<typeof scrollKey>(scrollKey).$closeScroll();
 ```
 
 > 第二种 getCurrentInstance()
@@ -91,9 +91,9 @@ proxy.$closeScroll();
 	const items = ref<string[]>([]);
 	for (let i = 0; i < 200; i++) items.value.push(`Item ${i + 1}`);
 
-	import { scrollKey } from "vue3-progress-scroll";
-	inject(scrollKey)?.$openScroll();
-	inject(scrollKey)?.$closeScroll();
+   import { scrollKey } from "vue3-progress-scroll";
+   inject<typeof scrollKey>(scrollKey).$openScroll();
+   inject<typeof scrollKey>(scrollKey).$closeScroll();
 </script>
 
 ```
