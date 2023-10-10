@@ -29,7 +29,7 @@ function onSetProgressProp(
 	option: ScrollBarType = {
 		progress: "red",
 		progressRollback: "#fff",
-		progressTop: "0px",
+		progressTop: "3px",
 		progressLeft: "0px",
 		UIViewBackground: "#fff",
 	}
