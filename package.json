@@ -1,11 +1,11 @@
 {
   "name": "vue3-progress-scroll",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "🎉🎉🤖 `vue3-progress-scroll` 轻量版 滚动进度可视化插件, 融入 Vue3 Hooks, 更方便使用, 感受开发的乐趣 ~",
   "main": "lib/index.js",
   "scripts": {
-    "tsc": "tsc",
-    "tsc:compress": "tsc -w lib/index.ts"
+    "tsc": "tsc -W -p tsconfig.json",
+    "tsc:default": "tsc -w --outDir lib lib/index.ts"
   },
   "keywords": [
     "vue3",

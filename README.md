@@ -100,6 +100,4 @@ proxy.$closeScroll();
 
 ## 💌 原理
 
-```javascript
-- github:https://github.com/huozaifenlangli/vue3-progress-scroll--NPM
-```
+[一键快阅源码（约 20 行）9-28](https://zhang-kun8888.gitee.io/vue3-tools-docs/vue3-progress-scroll.html#%F0%9F%92%8C-%E5%8E%9F%E7%90%86)
