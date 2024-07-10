@@ -4,7 +4,7 @@
 
 ## 📦 体验
 
-[一键速看](https://huozaifenlangli.github.io/Vue3-template/#/scroll)
+[一键速看](https://huo-zai-feng-lang-li.github.io/Vue3-template/#/scroll)
 
 ## 🌍 安装
 
@@ -100,4 +100,4 @@ proxy.$closeScroll();
 
 ## 💌 原理
 
-[一键快阅源码（约 20 行）9-28](https://zhang-kun8888.gitee.io/vue3-tools-docs/vue3-progress-scroll.html#%F0%9F%92%8C-%E5%8E%9F%E7%90%86)
+[一键快阅源码（约 20 行）9-28](https://huo-zai-feng-lang-li.github.io/vue3-tools-docs/vue3-progress-scroll.html#%F0%9F%92%8C-%E5%8E%9F%E7%90%86)
